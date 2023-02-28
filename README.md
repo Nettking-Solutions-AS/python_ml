@@ -20,11 +20,13 @@ The project is designed to be modular and extensible, with each script performin
 
 ## Getting started
 To get started with the project, you'll need to clone the repository and install the required packages:<br />
-<br />
-
+```sh
 git clone https://github.com/your-username/btc-predict.git<br />
-cd btc-predict<br />
+```
+```sh
 pip install -r requirements.txt<br />
-
+```
 You can then run the run.py script to retrieve the historical data and train the machine learning model:<br />
+```sh
 python run.py
+```
