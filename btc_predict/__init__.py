@@ -7,3 +7,4 @@ from btc_predict.addPriceDirectionLabel import *
 from btc_predict.splitData import *
 from btc_predict.createMlModel import *
 from btc_predict.runModel import *
+from btc_predict.getData import *

@@ -8,10 +8,13 @@ def fileImport(file_name):
     Returns:
         str: The contents of the file as a string.
     """
+    try:
+        # Open the file and read its contents
+        with open(file_name, "r") as f:
+            file_content = f.read()
 
-    # Open the file and read its contents
-    with open(file_name, "r") as f:
-        file_content = f.read()
-
-    # Return the contents of the file
-    return file_content
+        # Return the contents of the file
+        return file_content
+    except:
+        print('No local cache.')
+        return None

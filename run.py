@@ -1,13 +1,22 @@
+import json
+
 # Import the btc_predict module which contains the functions needed for this script
 from btc_predict import *
 
+
+    
 def main():
     """
     This is the main function that runs the script.
     """
-
-    # Get historic data from an API
-    data = getHistoricData()
+    inputFile = 'output.txt'
+    if fileImport(inputFile) is not None:
+        # Get historic data from an API is no local cache
+        rawData = fileImport(inputFile)
+        data = json.loads(rawData)
+        print('Collecting data from local cache.')
+    else:
+        data = getHistoricData()
 
     # Write the data to a file
     writeToFile(data)
