@@ -8,7 +8,7 @@ Bitcoin prices are notoriously difficult to predict, with frequent and dramatic 
 
 -Retrieving historical Bitcoin price data from the Coindesk API <br />
 -Converting the data to a pandas dataframe <br />
--Adding technical indicators (such as RSI) to the dataframe <br />  
+-Adding technical indicators (such as RSI) to the dataframe <br /> 
 -Labeling the data with the direction of price movements <br />
 -Splitting the data into training and testing sets <br />
 -Creating a Random Forest classifier to predict price movements <br />
