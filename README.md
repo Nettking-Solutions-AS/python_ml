@@ -21,12 +21,12 @@ The project is designed to be modular and extensible, with each script performin
 ## Getting started
 To get started with the project, you'll need to clone the repository and install the required packages:<br />
 ```sh
-git clone https://github.com/your-username/btc-predict.git<br />
+git clone https://github.com/Nettking/python_ml.git
 ```
 ```sh
-pip install -r requirements.txt<br />
+pip install -r requirements.txt
 ```
-You can then run the run.py script to retrieve the historical data and train the machine learning model:<br />
+You can then run the run.py script to retrieve the historical data and train the machine learning model:
 ```sh
 python run.py
 ```
