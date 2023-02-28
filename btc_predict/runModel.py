@@ -1,6 +1,19 @@
 from btc_predict.hyperParameterOptimize import *
 
 def runModel(model, df, train_data, test_data):
+    """
+    Trains and tests a machine learning model on Bitcoin price data.
+
+    Args:
+        model (sklearn.ensemble.RandomForestClassifier): The machine learning model to train and test.
+        df (pandas.DataFrame): The dataframe containing the Bitcoin price data.
+        train_data (pandas.DataFrame): The training data to use for training the model.
+        test_data (pandas.DataFrame): The testing data to use for testing the model.
+
+    Returns:
+        None
+    """
+
     # Train the model on the training data
     X_train = train_data[['Price', 'RSI']].values
     y_train = train_data['Label']
@@ -25,7 +38,5 @@ def runModel(model, df, train_data, test_data):
     last_price = df['Price'].iloc[-1]
     last_rsi = df['RSI'].iloc[-1]
     next_price = model.predict([[last_price, last_rsi]])[0]
-
-
 
     print('Next day price direction:', 'up' if next_price == 1 else 'down')

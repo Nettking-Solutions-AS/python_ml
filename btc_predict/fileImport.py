@@ -1,7 +1,17 @@
-
 def fileImport(file_name):
-    # Read the contents of the file
+    """
+    Reads the contents of the specified file and returns them as a string.
+
+    Args:
+        file_name (str): The name of the file to read.
+
+    Returns:
+        str: The contents of the file as a string.
+    """
+
+    # Open the file and read its contents
     with open(file_name, "r") as f:
         file_content = f.read()
-    return file_content
 
+    # Return the contents of the file
+    return file_content
