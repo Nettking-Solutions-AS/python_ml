@@ -1,12 +1,5 @@
 # Local libaries
-from getHistoricData import *
-from convertDataToDf import *
-from addRSIToDf import *
-from writeToFile import *
-from addPriceDirectionLabel import *
-from splitData import *
-from createMlModel import *
-from runModel import *
+from btc_predict import *
 
 
 # Get historic data

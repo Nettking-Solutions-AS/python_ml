@@ -1,5 +1,5 @@
 
-from fileImport import *
+from btc_predict.fileImport import *
 
 
 def writeToFile(data):

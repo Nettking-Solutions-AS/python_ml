@@ -1,4 +1,4 @@
-from hyperParameterOptimize import *
+from btc_predict.hyperParameterOptimize import *
 
 def runModel(model, df, train_data, test_data):
     # Train the model on the training data
